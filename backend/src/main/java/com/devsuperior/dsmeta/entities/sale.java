@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_sales")
-public class sale {
+public class Sale {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class sale {
   private Double amount;
  private LocalDate date;
  
- public sale() {
+ public Sale() {
 	 }
 
 public long getId() {
@@ -72,4 +72,3 @@ public void setDate(LocalDate date) {
 	this.date = date;
 }
  }
-
